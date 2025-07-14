@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:widgets_app/config/router/app_router.dart';
 import 'package:widgets_app/config/theme/theme_notifier.dart';
-import 'package:widgets_app/presentation/screens/home/home_screen.dart';
 
 void main() {
   runApp(
@@ -18,10 +18,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeNotifier = Provider.of<ThemeNotifier>(context);
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: themeNotifier.currentTheme,
-      home: const HomeScreen(),
     );
   }
 }
