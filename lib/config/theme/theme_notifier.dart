@@ -9,8 +9,8 @@ class ThemeNotifier extends ChangeNotifier {
   ThemeData get currentTheme =>
       _isDarkMode ? AppTheme.darkTheme : AppTheme.lightTheme;
 
-  void toggleTheme() {
-    _isDarkMode = !_isDarkMode;
+  void toggleTheme(bool isOn) {
+    _isDarkMode = isOn;
     notifyListeners();
   }
 }
