@@ -39,10 +39,10 @@ class _CustomListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return ListTile(
-      leading: Icon(menuItem.icon, color: theme.primaryColor),
+      leading: Icon(menuItem.icon, color: theme.colorScheme.primary),
       trailing: Icon(
         Icons.arrow_forward_ios_rounded,
-        color: theme.primaryColor,
+        color: theme.colorScheme.primary,
       ),
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
