@@ -19,6 +19,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeNotifier = Provider.of<ThemeNotifier>(context);
     return MaterialApp.router(
+      title: "Flutter Widgets",
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
       theme: themeNotifier.currentTheme,
