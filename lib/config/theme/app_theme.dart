@@ -1,32 +1,29 @@
 import 'package:flutter/material.dart';
-import 'app_colors.dart';
+
+const colorList = <Color>[
+  Color(0xFF1565C0), // Azul fuerte
+  Color(0xFF42A5F5), // Azul cielo
+  Color(0xFF009688), // Verde azulado
+  Color(0xFF4CAF50), // Verde
+  Color(0xFFFFA726), // Naranja suave
+  Color(0xFFFF7043), // Naranja rojizo
+  Color(0xFFD32F2F), // Rojo intenso
+  Color(0xFF7E57C2), // Morado
+  Color(0xFFEC407A), // Rosado fuerte
+  Color(0xFF5D4037), // Marrón oscuro
+  Color(0xFF78909C), // Gris azulado
+  Color(0xFF546E7A), // Azul grisáceo
+];
 
 class AppTheme {
-  static ThemeData lightTheme = ThemeData(
-    useMaterial3: true,
-    colorSchemeSeed: AppColors.primaryLight,
-    brightness: Brightness.light,
-    scaffoldBackgroundColor: AppColors.backgroundLight,
-    textTheme: const TextTheme(
-      bodyMedium: TextStyle(color: AppColors.textLight),
-    ),
-    appBarTheme: const AppBarTheme(
-      centerTitle: false, // <-- Aquí centramos el título
-      elevation: 0, // Color del texto/íconos
-    ),
-  );
+  final int selectedColor;
 
-  static ThemeData darkTheme = ThemeData(
-    useMaterial3: true,
-    colorSchemeSeed: AppColors.primaryDark,
-    brightness: Brightness.dark,
-    scaffoldBackgroundColor: AppColors.backgroundDark,
-    textTheme: const TextTheme(
-      bodyMedium: TextStyle(color: AppColors.textDark),
-    ),
-    appBarTheme: const AppBarTheme(
-      centerTitle: false, // <-- También aquí
-      elevation: 0,
-    ),
-  );
+  AppTheme({this.selectedColor = 0})
+    : assert(
+        selectedColor >= 0 && selectedColor < colorList.length,
+        "Selected color index is out of range",
+      );
+
+  ThemeData getTheme() =>
+      ThemeData(useMaterial3: true, colorSchemeSeed: colorList[selectedColor]);
 }

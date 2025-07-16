@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:widgets_app/config/theme/theme_notifier.dart';
 
 class UiControlsScreen extends StatelessWidget {
   static const name = "ui_controls_screen";
@@ -33,7 +31,6 @@ class _UiControlsViewState extends State<_UiControlsView> {
 
   @override
   Widget build(BuildContext context) {
-    final themeNotifier = Provider.of<ThemeNotifier>(context);
     return ListView(
       physics: const ClampingScrollPhysics(),
       children: [
@@ -43,14 +40,6 @@ class _UiControlsViewState extends State<_UiControlsView> {
           value: isDeveloper,
           onChanged: (value) => setState(() {
             isDeveloper = !isDeveloper;
-          }),
-        ),
-        SwitchListTile(
-          title: Text("Dark Mode"),
-          subtitle: const Text("Cambiar Tema de la aplicacion"),
-          value: themeNotifier.isDarkMode,
-          onChanged: (value) => setState(() {
-            themeNotifier.toggleTheme(value);
           }),
         ),
 
