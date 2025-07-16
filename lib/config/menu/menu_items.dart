@@ -64,4 +64,10 @@ const List<MenuItem> appMenuItems = [
     link: "/infinite",
     icon: Icons.list_alt_rounded,
   ),
+  MenuItem(
+    title: "Contador",
+    subTitle: "Contador de clicks",
+    link: "/counter_screen",
+    icon: Icons.add_task_outlined,
+  ),
 ];
