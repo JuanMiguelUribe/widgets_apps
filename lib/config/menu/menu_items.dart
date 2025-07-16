@@ -17,6 +17,12 @@ class MenuItem {
 
 const List<MenuItem> appMenuItems = [
   MenuItem(
+    title: "Contador",
+    subTitle: "Contador de clicks",
+    link: "/counter_screen",
+    icon: Icons.add_task_outlined,
+  ),
+  MenuItem(
     title: "Botones",
     subTitle: "Varios botones en Flutter",
     link: "/buttons",
@@ -65,9 +71,9 @@ const List<MenuItem> appMenuItems = [
     icon: Icons.list_alt_rounded,
   ),
   MenuItem(
-    title: "Contador",
-    subTitle: "Contador de clicks",
-    link: "/counter_screen",
-    icon: Icons.add_task_outlined,
+    title: "Cambiar tema",
+    subTitle: "Cambiar tema de la aplicacion",
+    link: "/theme_changer",
+    icon: Icons.color_lens_outlined,
   ),
 ];
