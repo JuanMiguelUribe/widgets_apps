@@ -12,9 +12,47 @@ Una aplicación en Flutter que sirve como catálogo interactivo de widgets, anim
 - 🧩 Componentes reutilizables
 - 🧪 Lista para pruebas unitarias
 
-## 📸 Capturas de pantalla
+## 📸 Capturas y Demos de la App
 
-*(Agrega aquí algunas imágenes usando widgets reales en acción)*
+### 🎛️ UI Controls
+
+![UI Controls](assets/screenshots/Uicontrols_Screen.png)
+
+### 🔘 Botones personalizados
+
+![Botones](assets/screenshots/buttons_screen.png)
+
+### 🔢 Contador con manejo de estado
+
+![Contador](assets/screenshots/counter_screen.png)
+
+### 🌑 Modo Oscuro activado
+
+![Dark Mode](assets/screenshots/dark_mode.png)
+
+### ☀️ Modo Claro activado
+
+![Light Mode](assets/screenshots/light_mode.png)
+
+### 🎨 Control de Tema en tiempo real
+
+![Theme Control](assets/screenshots/theme_control.gif)
+
+### 🔄 Scroll Infinito con carga dinámica
+
+![Scroll Infinito](assets/screenshots/infinite_scroll_screen.gif)
+
+### 📦 Snackbars con acciones contextuales
+
+![Snackbars](assets/screenshots/snackbars_screen.gif)
+
+### 🌀 Indicadores de progreso animados
+
+![Progress Indicators](assets/screenshots/progress_indicators.gif)
+
+### 🧱 Uso de AnimatedContainer
+
+![Animated Container](assets/screenshots/animated_container.gif)
 
 ## 🚀 ¿Cómo correrla?
 
@@ -27,5 +65,4 @@ flutter run
 
 ## 🧑‍💻 Sobre el desarrollador
 
-Hecha por [Juan](https://github.com/JuanMiguelUribe), Ingeniero Mecatrónico y desarrollador entusiasta de apps móviles y análisis de datos.  
-Siempre aprendiendo, siempre creando.
+Hecha por [Juan](https://github.com/JuanMiguelUribe), Ingeniero Mecatrónico y desarrollador entusiasta de apps móviles y análisis de datos.
